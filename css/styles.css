@@ -1,0 +1,34 @@
+h1 {
+    font-family: 'Mansalva', cursive;
+}
+
+div#to-do-list {
+    font-size: 2em;
+    font-family: 'Amatic SC', cursive;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(200px, 1fr));
+    grid-gap: 5px;
+    
+}
+
+div.task-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background: lightcoral;
+    border: 1px solid red;
+}
+
+.deleteButtom {
+    width: 15%;
+}
+
+input#usr-task {
+    width: 25%;
+}
+
+p.lineThrough {
+    text-decoration: line-through;
+}
+
+
+
