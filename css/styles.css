@@ -1,34 +1,70 @@
+header {
+    padding-bottom: 3em;
+}
+
 h1 {
     font-family: 'Mansalva', cursive;
+}
+
+button {
+    padding: .375rem .75rem;
+    border: 1px solid #e968cd;
+    border-radius: .25rem;
+    color: #000000;
+    font-weight: bold;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out;
+}
+
+.button:hover, .button:active, .button:focus {
+    color: #000000;
+    background-color: #f08093;
 }
 
 div#to-do-list {
     font-size: 2em;
     font-family: 'Amatic SC', cursive;
     display: grid;
-    grid-template-columns: repeat(3, minmax(200px, 1fr));
+    grid-template-columns: .5fr;
     grid-gap: 5px;
-    
 }
 
 div.task-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: .5fr 1.5fr 1fr;
+    grid-template-rows: auto;
     background: lightcoral;
     border: 1px solid red;
+    /* overflow: auto; */
+    /* width: fit-content;
+    height: auto; */
 }
 
 .deleteButtom {
-    width: 15%;
+    padding: .375rem .75rem;
+    border: 1px solid #e968cd;
+    border-radius: .25rem;
+    color: #000000;
+    font-weight: bold;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out;
+}
+
+.deleteButtom:hover, .deleteButtom:active, .deleteButtom:focus {
+    color: #000000;
+    background-color: #f08093;
 }
 
 input#usr-task {
+    margin-bottom: 1em;
     width: 25%;
 }
 
+p {
+    margin: auto auto;
+}
 p.lineThrough {
     text-decoration: line-through;
 }
 
-
-
+input[type="checkbox" i] {
+    margin: auto auto;
+}
