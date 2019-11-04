@@ -1,10 +1,23 @@
 header {
-    padding-bottom: 3em;
+    background: chocolate;
+    border: 1px red solid;
+    align-content: center;
+    box-sizing: border-box;
+    margin: 0 auto;
+    max-width: 768px;
+    text-align: center;
+    align-items: center;
+
 }
 
 h1 {
     font-family: 'Mansalva', cursive;
 }
+
+form.form-inline{
+    justify-content: center;
+}
+
 
 button {
     padding: .375rem .75rem;
@@ -23,28 +36,34 @@ button {
 div#to-do-list {
     font-size: 2em;
     font-family: 'Amatic SC', cursive;
-    display: grid;
-    grid-template-columns: .5fr;
-    grid-gap: 5px;
+    /* display: grid;
+    /* grid-template-columns: .5fr;
+    grid-gap: 5px; */
+    
 }
 
 div.task-container {
-    display: grid;
-    grid-template-columns: .5fr 1.5fr 1fr;
-    grid-template-rows: auto;
+    display: flex;
+    /* justify-content: center; */
+    /* justify-content: space-between; */
+
+    align-items: center;
     background: lightcoral;
     border: 1px solid red;
-    /* overflow: auto; */
-    /* width: fit-content;
-    height: auto; */
+    position: relative;
 }
 
 .deleteButtom {
+    position: absolute;
+    right: 0;
+    align-self: baseline;
     padding: .375rem .75rem;
     border: 1px solid #e968cd;
     border-radius: .25rem;
     color: #000000;
     font-weight: bold;
+    font-size: .5em;
+    margin: 1em;
     transition: color .15s ease-in-out, background-color .15s ease-in-out;
 }
 
@@ -53,18 +72,24 @@ div.task-container {
     background-color: #f08093;
 }
 
-input#usr-task {
-    margin-bottom: 1em;
+/* input#usr-task {
     width: 25%;
-}
+} */
 
-p {
-    margin: auto auto;
-}
 p.lineThrough {
     text-decoration: line-through;
 }
 
 input[type="checkbox" i] {
     margin: auto auto;
+}
+
+input.cboxtask {
+    margin: auto 1em;
+}
+
+.hero {
+    width: 90%;
+    justify-content: center;
+
 }

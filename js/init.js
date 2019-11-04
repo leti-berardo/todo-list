@@ -9,10 +9,20 @@ function add() {
     $('#usr-task').val('');
 }
 
+document.addEventListener('keypress', function (e) {
+    if (e.keyCode === 13) {
+        add();
+        e.preventDefault();
+    }
+});
+
 function newTaskSpace(data) {
     let toDoList = $('#to-do-list');
+    document.createElement
     toDoList.append(`<div class="task-container"><input type="checkbox" class="cboxtask" onclick="lineThroughTask(this)"><p>${data}</p><button onclick="deleteButtom(this)" class="deleteButtom">Delete task</button></div>`);
 }
+
+
 
 function deleteButtom(data) {
     let value = $(data).closest(".task-container");
